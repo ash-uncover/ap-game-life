@@ -1,0 +1,38 @@
+{
+  "name": "My Grid",
+  "width": "3",
+  "height": "3",
+  "widgets": [
+    {
+      "id": "widget-4d073140-f722-4913-8d83-70c034bdb076",
+      "width": 1,
+      "height": 3,
+      "background": "BlueViolet",
+      "row": 1,
+      "column": 2,
+      "widget": null,
+      "selected": false
+    },
+    {
+      "id": "widget-3faa7c3e-2724-4a50-af67-568240991a59",
+      "width": 1,
+      "height": 1,
+      "background": "MediumSlateBlue",
+      "row": 2,
+      "column": 1,
+      "widget": null,
+      "selected": false
+    },
+    {
+      "id": "widget-d436e598-3ecd-46cb-9ab9-84707aaefb11",
+      "width": 1,
+      "height": 1,
+      "background": "MediumOrchid",
+      "row": 2,
+      "column": 3,
+      "widget": null,
+      "selected": true
+    }
+  ],
+  "errors": []
+}

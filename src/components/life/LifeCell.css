@@ -1,0 +1,6 @@
+.life-cell {
+  aspect-ratio: 1;
+  &.life-cell--alive {
+    background: black;
+  }
+}

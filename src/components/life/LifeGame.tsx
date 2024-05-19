@@ -3,8 +3,9 @@ import { useSelector } from 'react-redux'
 import { LifeSelectors } from '../../store/life/life.selectors'
 import { LifeCell } from './LifeCell'
 
-import './LifeGame.css'
 import { ICell } from '../../lib/LifeModel'
+
+import './LifeGame.css'
 
 // ---------------------------------------------------
 // Create Component LifeGame

@@ -1,0 +1,21 @@
+{
+  "name": "maze",
+  "url": "http://localhost:8081",
+  "provides": {
+    "ap-games/game": {
+      "maze": {
+        "attributes": {
+          "name": "Maze",
+          "description": "A maze game",
+          "thumbnail": "/images/thumbnail.jpg"
+        },
+        "elements": {
+          "main": {
+            "url": "",
+            "type": "iframe"
+          }
+        }
+      }
+    }
+  }
+}

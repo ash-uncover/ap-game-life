@@ -52,7 +52,6 @@ export const App = ({
 
   return (
     <div className='app'>
-      <LifeGame />
       <div>
         <button
           onClick={handleStartClick}
@@ -76,6 +75,9 @@ export const App = ({
         <span>
           Turn #{turn}
         </span>
+      </div>
+      <div className='app-content'>
+        <LifeGame />
       </div>
     </div>
   )

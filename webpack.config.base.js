@@ -11,7 +11,7 @@ module.exports = {
   entry: path.resolve(DIR_SRC, 'index.tsx'),
 
   resolve: {
-    modules: ['node_modules', 'src'],
+    modules: ['node_modules', './src'],
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
 
@@ -20,7 +20,7 @@ module.exports = {
       patterns: [{
         from: path.resolve(__dirname, '_redirects'),
         to: '.',
-      }],
+      }]
     }),
   ],
 
@@ -31,7 +31,6 @@ module.exports = {
         include: DIR_SRC,
         exclude: DIR_NODE_MODULES,
         use: [
-          { loader: 'source-map-loader' },
           { loader: 'babel-loader' },
         ],
       },
@@ -40,7 +39,6 @@ module.exports = {
         include: DIR_SRC,
         exclude: DIR_NODE_MODULES,
         use: [
-          { loader: 'source-map-loader' },
           { loader: 'ts-loader' },
         ],
       },
@@ -66,8 +64,15 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name][ext][query]'
+          filename: 'images/[name][ext][query]',
         },
+      },
+      {
+        test: /\.(mp3|flac)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'sound/[name][ext][query]'
+        }
       },
       {
         test: /\.(_redirects)$/i,
